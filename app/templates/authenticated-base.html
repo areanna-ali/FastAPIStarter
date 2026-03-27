@@ -74,8 +74,22 @@
         <ul class="nav nav-pills flex-column gap-2 flex-grow-1">
             <li class="nav-item">
                 <a class="nav-link d-flex align-items-center {{ 'active' if request.path == '/app' }}" href="/app">
-                    <span class="material-symbols-outlined me-2">people</span>
+                    <span class="material-symbols-outlined me-2">face</span>
                     Users
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center {{ 'active' if request.path == '/chats' }}" href="/chats">
+                    <span class="material-symbols-outlined me-2">favorite</span>
+                    Chats
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link d-flex align-items-center {{ 'active' if request.path == '/upload' }}" href="/upload">
+                    <span class="material-symbols-outlined me-2">file_upload</span>
+                    Upload
                 </a>
             </li>
             

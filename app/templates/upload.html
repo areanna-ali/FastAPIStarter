@@ -1,0 +1,15 @@
+{% extends "authenticated-base.html" %}
+
+{% block external_js %}
+
+{% endblock %}
+
+
+{% block subpage_content %}
+
+<form action="/upload" enctype="multipart/form-data" method="post">
+<input name="files" type="file" multiple>
+<input type="submit">
+</form>
+
+{% endblock %}
